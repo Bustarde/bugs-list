@@ -48,17 +48,17 @@ tr:nth-child(odd) {
 
 <table>
   <tr>
-    <li>ID</li>
-    <li>Summary</li>
-    <li>Severity</li>
-    <li>Status</li>
+    <th>ID</th>
+    <th>Summary</th>
+    <th>Severity</th>
+    <th>Status</th>
   </tr>
   <?php foreach ($bugs_list->issues as $bug)
 {
-	echo '<tr>' . '<li>'. $bug->id . '</li>' .
-  '<li>'. $bug->summary . '</li>' . 
-  '<li>'. $bug->severity->name .'</li>' .
-  '<li>'. $bug->status->name . '</li>' . '<tr>';
+	echo '<tr>' . '<th>'. $bug->id . '</th>' .
+  '<th>'. $bug->summary . '</th>' . 
+  '<th>'. $bug->severity->name .'</th>' .
+  '<th>'. $bug->status->name . '</th>' . '<tr>';
 }
 ?>
 
